@@ -16,7 +16,7 @@
     "action.yml"
   ],
   "scripts": {
-    "test": "node --test \"test/**/*.test.js\"",
+    "test": "node --test",
     "examples": "node scripts/build-examples.js",
     "site": "node scripts/build-site.js",
     "dev": "node scripts/build-site.js && node scripts/serve.js"
