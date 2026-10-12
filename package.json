@@ -1,0 +1,45 @@
+{
+  "name": "contribution-fx",
+  "version": "1.0.0",
+  "description": "Turn your GitHub contribution graph into animated SVG art for your profile README. Gravity, Game of Life, sorting, ripples, fireworks — one GitHub Action, zero dependencies.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "contribution-fx": "bin/cli.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "action.yml"
+  ],
+  "scripts": {
+    "test": "node --test \"test/**/*.test.js\"",
+    "examples": "node scripts/build-examples.js",
+    "site": "node scripts/build-site.js",
+    "dev": "node scripts/build-site.js && node scripts/serve.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "github",
+    "github-action",
+    "contribution-graph",
+    "profile-readme",
+    "svg",
+    "animation",
+    "game-of-life",
+    "readme",
+    "github-profile"
+  ],
+  "author": "Sur1ive",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sur1ive/contribution-fx.git"
+  },
+  "homepage": "https://sur1ive.github.io/contribution-fx/"
+}

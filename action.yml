@@ -1,0 +1,29 @@
+name: 'Contribution FX'
+description: 'Turn your contribution graph into animated SVG art: gravity, Game of Life, sorting, ripples, fireworks.'
+author: 'Sur1ive'
+
+branding:
+  icon: 'activity'
+  color: 'green'
+
+inputs:
+  github_user_name:
+    description: 'GitHub username whose contribution graph is rendered. Defaults to the repository owner.'
+    required: false
+    default: ${{ github.repository_owner }}
+  github_token:
+    description: 'Token used to read the contribution calendar through the GraphQL API. The default GITHUB_TOKEN is enough.'
+    required: false
+    default: ${{ github.token }}
+  outputs:
+    description: |
+      One output file per line, with options as a query string:
+        dist/fx.svg?theme=life&palette=ocean&mode=dark&speed=1.5&label=true
+      Options: theme (gravity|life|sort|ripple|fireworks), palette (github|ocean|sunset|purple|halloween),
+      mode (light|dark), speed (number), background (CSS color), label (true|false).
+    required: false
+    default: 'dist/contribution-fx.svg'
+
+runs:
+  using: 'node24'
+  main: 'src/action.js'

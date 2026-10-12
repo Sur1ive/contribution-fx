@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>contribution-fx — your GitHub contribution graph, but alive</title>
+  <meta name="description" content="A zero-dependency GitHub Action that turns your contribution graph into animated SVG art for your profile README. Gravity, Game of Life, sorting, ripples and fireworks, in light and dark." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#f3f5f2" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0e1320" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://sur1ive.github.io/contribution-fx/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="contribution-fx" />
+  <meta property="og:title" content="contribution-fx — your contribution graph, but alive" />
+  <meta property="og:description" content="Turn your GitHub contribution graph into animated SVG art for your profile README. One GitHub Action, zero dependencies." />
+  <meta property="og:url" content="https://sur1ive.github.io/contribution-fx/" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/Sur1ive/contribution-fx/main/examples/social.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="contribution-fx — your contribution graph, but alive" />
+  <meta name="twitter:description" content="Turn your GitHub contribution graph into animated SVG art for your profile README. One GitHub Action, zero dependencies." />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/Sur1ive/contribution-fx/main/examples/social.png" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#playground">Skip to the playground</a>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="contribution-fx home">
+        <svg class="brand-mark" viewBox="0 0 39 39" aria-hidden="true">
+          <rect class="p2" x="0" y="0" width="11" height="11" rx="2" />
+          <rect class="p0" x="14" y="0" width="11" height="11" rx="2" />
+          <rect class="p3" x="28" y="0" width="11" height="11" rx="2" />
+          <rect class="p1" x="0" y="14" width="11" height="11" rx="2" />
+          <rect class="p4" x="14" y="14" width="11" height="11" rx="2" />
+          <rect class="p2" x="28" y="14" width="11" height="11" rx="2" />
+          <rect class="p4" x="0" y="28" width="11" height="11" rx="2" />
+          <rect class="p3" x="14" y="28" width="11" height="11" rx="2" />
+          <rect class="p4" x="28" y="28" width="11" height="11" rx="2" />
+        </svg>
+        <span>contribution-fx</span>
+      </a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#playground">Playground</a>
+        <a href="#setup">Setup</a>
+        <a href="#effects">Effects</a>
+      </nav>
+      <a class="btn btn-star btn-sm" href="https://github.com/Sur1ive/contribution-fx">
+        <svg class="star" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+        <span>Star</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">GitHub Action · zero dependencies · MIT</p>
+        <h1 class="headline">
+          Your contribution graph,<br />
+          but <span class="sr-only">alive.</span><span class="pixel-word" aria-hidden="true"></span>
+        </h1>
+        <p class="pitch">One workflow file turns your last year of commits into an animated SVG for your profile README. It re-renders every night, in light and dark.</p>
+        <div class="cta">
+          <a class="btn btn-star" href="https://github.com/Sur1ive/contribution-fx">
+            <svg class="star" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+            <span>Star on GitHub</span>
+          </a>
+          <a class="btn btn-ghost" href="#playground">Get started <span aria-hidden="true">↓</span></a>
+        </div>
+
+        <figure class="showcase">
+          <div class="frame">
+            <div class="frame-bar">
+              <span class="frame-path"><span class="muted">octocat /</span> README.md</span>
+              <div class="hero-tabs" role="tablist" aria-label="Preview effect"></div>
+            </div>
+            <div class="frame-body">
+              <img class="hero-img" alt="" width="771" height="130" />
+            </div>
+          </div>
+          <figcaption class="hero-caption"></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="playground" class="section playground">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Playground</p>
+          <h2>Make yours</h2>
+          <p class="lede">Load your own graph, pick an effect, and the setup below updates to match.</p>
+        </div>
+
+        <form class="user-form" id="user-form" autocomplete="off">
+          <label class="field-label" for="user">GitHub username</label>
+          <div class="user-row">
+            <span class="at" aria-hidden="true">@</span>
+            <input id="user" name="user" type="text" inputmode="text" spellcheck="false" autocapitalize="off" placeholder="torvalds" maxlength="39" aria-describedby="status" />
+            <button class="btn btn-ink" type="submit" id="load-btn">Load graph</button>
+          </div>
+          <p class="status" id="status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="stage" id="stage" data-mode="light">
+          <div class="stage-bar">
+            <span class="stage-title" id="stage-title">README.md</span>
+            <div class="stage-actions">
+              <button class="btn btn-quiet btn-sm" type="button" id="share-btn">Copy link</button>
+              <button class="btn btn-quiet btn-sm" type="button" id="download-btn">Download SVG</button>
+            </div>
+          </div>
+          <div class="stage-body">
+            <img id="preview" alt="Animated contribution graph preview" width="771" height="130" />
+            <p class="stage-error" id="stage-error" hidden></p>
+          </div>
+        </div>
+
+        <div class="controls">
+          <fieldset class="control control-effects">
+            <legend><span>Effect</span><code>theme</code></legend>
+            <div class="effects" id="effects"></div>
+          </fieldset>
+
+          <div class="control-row">
+            <fieldset class="control">
+              <legend><span>Palette</span><code>palette</code></legend>
+              <div class="palettes" id="palettes"></div>
+            </fieldset>
+
+            <fieldset class="control">
+              <legend><span>Mode</span><code>mode</code></legend>
+              <div class="segmented" id="modes">
+                <label><input type="radio" name="mode" value="light" /><span>Light</span></label>
+                <label><input type="radio" name="mode" value="dark" /><span>Dark</span></label>
+              </div>
+            </fieldset>
+
+            <div class="control">
+              <label class="legend" for="speed"><span>Speed</span><code>speed</code></label>
+              <div class="speed">
+                <input id="speed" type="range" min="0.25" max="3" step="0.25" value="1" />
+                <output id="speed-out" for="speed">1×</output>
+              </div>
+            </div>
+
+            <div class="control">
+              <span class="legend"><span>Caption</span><code>label</code></span>
+              <label class="check">
+                <input id="label" type="checkbox" />
+                <span>Show username and yearly total</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="setup" class="section setup">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Setup · about two minutes</p>
+          <h2>Put it on your profile</h2>
+          <p class="lede">Everything happens in your profile repository, <a class="repo-link" id="repo-link" href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme"><code id="repo-name">&lt;your-username&gt;/&lt;your-username&gt;</code></a>, the one whose README shows on your GitHub page.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step">
+            <div class="step-text">
+              <h3>Add the workflow</h3>
+              <p>Create <code>.github/workflows/contribution-fx.yml</code> with this content. The two <code>outputs</code> lines follow your playground choices.</p>
+              <a class="text-link" id="new-file-link" href="#" hidden>Create this file on GitHub <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="code">
+              <div class="code-bar">
+                <span>contribution-fx.yml</span>
+                <button class="btn btn-code" type="button" data-copy="workflow">Copy</button>
+              </div>
+              <pre><code id="workflow-code"></code></pre>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step-text">
+              <h3>Run it once</h3>
+              <p>Open the <strong>Actions</strong> tab, choose <strong>contribution-fx</strong> and press <strong>Run workflow</strong>. It publishes the SVGs to an <code>output</code> branch, then refreshes them every day at midnight UTC.</p>
+              <a class="text-link" id="actions-link" href="#" hidden>Open the Actions tab <span aria-hidden="true">→</span></a>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step-text">
+              <h3>Paste into README.md</h3>
+              <p>The <code>&lt;picture&gt;</code> tag shows the dark version to visitors who use GitHub in dark mode.</p>
+              <a class="text-link" id="readme-link" href="#" hidden>Edit your README <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="code">
+              <div class="code-bar">
+                <span>README.md</span>
+                <button class="btn btn-code" type="button" data-copy="readme">Copy</button>
+              </div>
+              <pre><code id="readme-code"></code></pre>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="effects" class="section gallery">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Effects</p>
+          <h2>Same year, five ways to move</h2>
+          <p class="lede">Every effect is plain SVG and CSS animation, so it plays right inside your README with no JavaScript.</p>
+        </div>
+        <div class="gallery-list" id="gallery"></div>
+      </div>
+    </section>
+
+    <section class="section outro">
+      <div class="wrap outro-inner">
+        <h2>Made your profile move?</h2>
+        <p>A star helps other people find contribution-fx, and tells us which effect to build next.</p>
+        <a class="btn btn-star" href="https://github.com/Sur1ive/contribution-fx">
+          <svg class="star" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+          <span>Star Sur1ive/contribution-fx</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p><a href="https://github.com/Sur1ive/contribution-fx">Sur1ive/contribution-fx</a> · <a href="https://github.com/Sur1ive/contribution-fx/blob/main/LICENSE">MIT license</a></p>
+      <p class="muted">The playground reads public contribution data through <a href="https://github.com/grubersjoe/github-contributions-api">github-contributions-api</a>, so it needs no token and stores nothing. The Action itself uses your repository's own <code>GITHUB_TOKEN</code>.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+name: Theme idea
+description: Suggest a new animation for the contribution graph
+labels: ['theme idea']
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What should happen to the graph?
+      description: Describe the animation. Sketches, GIFs or references are great.
+    validations:
+      required: true
+  - type: dropdown
+    id: build
+    attributes:
+      label: Would you like to build it?
+      options:
+        - Yes, I'd like to send a PR
+        - Maybe, with some guidance
+        - No, just an idea

@@ -1,0 +1,20 @@
+name: Bug report
+description: Something renders wrong or the action fails
+labels: ['bug']
+body:
+  - type: input
+    id: user
+    attributes:
+      label: GitHub username whose graph you rendered
+  - type: input
+    id: options
+    attributes:
+      label: Output line
+      placeholder: dist/fx.svg?theme=life&mode=dark
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Include the action log or a screenshot, and your browser if it is a rendering issue.
+    validations:
+      required: true

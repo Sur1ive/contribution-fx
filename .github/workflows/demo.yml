@@ -1,0 +1,40 @@
+# Dogfooding: renders the repository owner's real graph in every theme
+# and publishes the files to the `output` branch, exactly like users do.
+name: demo
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['src/**', 'action.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: ./
+        with:
+          outputs: |
+            dist/gravity.svg?theme=gravity
+            dist/gravity-dark.svg?theme=gravity&mode=dark
+            dist/life.svg?theme=life
+            dist/life-dark.svg?theme=life&mode=dark
+            dist/sort.svg?theme=sort
+            dist/sort-dark.svg?theme=sort&mode=dark
+            dist/ripple.svg?theme=ripple
+            dist/ripple-dark.svg?theme=ripple&mode=dark
+            dist/fireworks.svg?theme=fireworks
+            dist/fireworks-dark.svg?theme=fireworks&mode=dark
+      - uses: crazy-max/ghaction-github-pages@v5
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
