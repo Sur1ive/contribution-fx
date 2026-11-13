@@ -16,8 +16,8 @@
 <br><br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/gravity-dark.svg">
-  <img alt="contribution-fx gravity 主题" src="examples/gravity-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="examples/ripple-dark.svg">
+  <img alt="contribution-fx ripple 主题" src="examples/ripple-light.svg">
 </picture>
 
 </div>
@@ -28,16 +28,11 @@
 
 | 主题 | 效果 |
 | --- | --- |
-| `gravity` | 每个有贡献的格子掉落到当周底部、弹跳、停留，再飘回原位 |
-| `life` | 以你的贡献图为初始状态运行康威生命游戏，一代代演化 |
-| `sort` | 每一天移动到排序后的位置，整年变成完美渐变，再飞回原处 |
 | `ripple` | 最忙碌的几天像雨滴落入水面，冲击波扫过整张图（示例使用 `palette=ocean`） |
+| `sort` | 每一天移动到排序后的位置，整年变成完美渐变，再飞回原处 |
 | `fireworks` | 你最高产的日子会升起烟花（示例使用 `palette=sunset`） |
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/life-dark.svg">
-  <img alt="life" src="examples/life-light.svg">
-</picture>
+| `life` | 以你的贡献图为初始状态运行康威生命游戏，一代代演化 |
+| `gravity` | 每个有贡献的格子掉落到当周底部、弹跳、停留，再飘回原位 |
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="examples/sort-dark.svg">
@@ -45,13 +40,18 @@
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/ripple-dark.svg">
-  <img alt="ripple" src="examples/ripple-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="examples/fireworks-dark.svg">
+  <img alt="fireworks" src="examples/fireworks-light.svg">
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/fireworks-dark.svg">
-  <img alt="fireworks" src="examples/fireworks-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="examples/life-dark.svg">
+  <img alt="life" src="examples/life-light.svg">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/gravity-dark.svg">
+  <img alt="gravity" src="examples/gravity-light.svg">
 </picture>
 
 ## 快速开始
@@ -79,8 +79,8 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/contribution-fx.svg?theme=gravity
-            dist/contribution-fx-dark.svg?theme=gravity&mode=dark
+            dist/contribution-fx.svg?theme=ripple
+            dist/contribution-fx-dark.svg?theme=ripple&mode=dark
 
       - uses: crazy-max/ghaction-github-pages@v5
         with:
@@ -119,7 +119,7 @@ outputs: |
 
 | 参数         | 取值                                           | 默认值      |
 | ------------ | ---------------------------------------------- | ----------- |
-| `theme`      | `gravity` `life` `sort` `ripple` `fireworks`   | `gravity`   |
+| `theme`      | `ripple` `sort` `fireworks` `life` `gravity`   | `gravity`   |
 | `palette`    | `github` `ocean` `sunset` `purple` `halloween` | `github`    |
 | `mode`       | `light` `dark`                                 | `light`     |
 | `speed`      | 任意正数（`2` 表示两倍速）                     | `1`         |

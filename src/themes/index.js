@@ -4,4 +4,5 @@ import sort from './sort.js';
 import ripple from './ripple.js';
 import fireworks from './fireworks.js';
 
-export const THEMES = { gravity, life, sort, ripple, fireworks };
+// Display order for the playground and docs.
+export const THEMES = { ripple, sort, fireworks, life, gravity };

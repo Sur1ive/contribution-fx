@@ -1,5 +1,5 @@
 name: 'Contribution FX'
-description: 'Turn your contribution graph into animated SVG art: gravity, Game of Life, sorting, ripples, fireworks.'
+description: 'Turn your contribution graph into animated SVG art: ripples, sorting, fireworks, Game of Life, gravity.'
 author: 'Sur1ive'
 
 branding:
@@ -19,7 +19,7 @@ inputs:
     description: |
       One output file per line, with options as a query string:
         dist/fx.svg?theme=life&palette=ocean&mode=dark&speed=1.5&label=true
-      Options: theme (gravity|life|sort|ripple|fireworks), palette (github|ocean|sunset|purple|halloween),
+      Options: theme (ripple|sort|fireworks|life|gravity), palette (github|ocean|sunset|purple|halloween),
       mode (light|dark), speed (number), background (CSS color), label (true|false).
     required: false
     default: 'dist/contribution-fx.svg'

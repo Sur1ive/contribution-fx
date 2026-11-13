@@ -1,7 +1,7 @@
 import { render, THEMES, PALETTES, demoCalendar, fetchPublic } from './src/index.js';
 
-const DEFAULTS = { theme: 'gravity', palette: 'github', mode: 'light', speed: 1, label: false };
 const THEME_NAMES = Object.keys(THEMES);
+const DEFAULTS = { theme: THEME_NAMES[0], palette: 'github', mode: 'light', speed: 1, label: false };
 const PALETTE_NAMES = Object.keys(PALETTES);
 const USERNAME = /^[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$/i;
 const HERO_CYCLE_MS = 10000;

@@ -16,8 +16,8 @@ Five effects · five palettes · light & dark · one GitHub Action · zero depen
 <br><br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/gravity-dark.svg">
-  <img alt="contribution-fx gravity theme" src="examples/gravity-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="examples/ripple-dark.svg">
+  <img alt="contribution-fx ripple theme" src="examples/ripple-light.svg">
 </picture>
 
 [![CI](https://github.com/Sur1ive/contribution-fx/actions/workflows/ci.yml/badge.svg)](https://github.com/Sur1ive/contribution-fx/actions/workflows/ci.yml)
@@ -31,20 +31,12 @@ Five effects · five palettes · light & dark · one GitHub Action · zero depen
 
 All examples below are real output of this action (rendered from demo data). Every theme loops forever, respects `prefers-reduced-motion`, and falls back to your normal graph when animations are off.
 
-### `gravity`
-Every active day drops to the bottom of its week, bounces, rests, then floats back into place.
+### `ripple`  <sub>shown with `palette=ocean`</sub>
+Your busiest days hit the graph like raindrops on water and send shockwaves across the year.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/gravity-dark.svg">
-  <img alt="gravity" src="examples/gravity-light.svg">
-</picture>
-
-### `life`
-Your graph seeds [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). Watch a year of commits evolve, generation by generation.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/life-dark.svg">
-  <img alt="life" src="examples/life-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="examples/ripple-dark.svg">
+  <img alt="ripple" src="examples/ripple-light.svg">
 </picture>
 
 ### `sort`
@@ -55,20 +47,28 @@ Every day travels to its sorted position until the year becomes a perfect gradie
   <img alt="sort" src="examples/sort-light.svg">
 </picture>
 
-### `ripple`  <sub>shown with `palette=ocean`</sub>
-Your busiest days hit the graph like raindrops on water and send shockwaves across the year.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/ripple-dark.svg">
-  <img alt="ripple" src="examples/ripple-light.svg">
-</picture>
-
 ### `fireworks`  <sub>shown with `palette=sunset`</sub>
 Your best days launch fireworks. Because shipping deserves a celebration.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="examples/fireworks-dark.svg">
   <img alt="fireworks" src="examples/fireworks-light.svg">
+</picture>
+
+### `life`
+Your graph seeds [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). Watch a year of commits evolve, generation by generation.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/life-dark.svg">
+  <img alt="life" src="examples/life-light.svg">
+</picture>
+
+### `gravity`
+Every active day drops to the bottom of its week, bounces, rests, then floats back into place.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/gravity-dark.svg">
+  <img alt="gravity" src="examples/gravity-light.svg">
 </picture>
 
 ## Quick start
@@ -96,8 +96,8 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/contribution-fx.svg?theme=gravity
-            dist/contribution-fx-dark.svg?theme=gravity&mode=dark
+            dist/contribution-fx.svg?theme=ripple
+            dist/contribution-fx-dark.svg?theme=ripple&mode=dark
 
       - uses: crazy-max/ghaction-github-pages@v5
         with:
@@ -136,7 +136,7 @@ outputs: |
 
 | Option       | Values                                              | Default       |
 | ------------ | --------------------------------------------------- | ------------- |
-| `theme`      | `gravity` `life` `sort` `ripple` `fireworks`        | `gravity`     |
+| `theme`      | `ripple` `sort` `fireworks` `life` `gravity`        | `gravity`     |
 | `palette`    | `github` `ocean` `sunset` `purple` `halloween`      | `github`      |
 | `mode`       | `light` `dark`                                      | `light`       |
 | `speed`      | any positive number (`2` = twice as fast)           | `1`           |
