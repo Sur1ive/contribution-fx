@@ -31,6 +31,22 @@ jobs:
             dist/ripple-dark.svg?theme=ripple&mode=dark
             dist/fireworks.svg?theme=fireworks
             dist/fireworks-dark.svg?theme=fireworks&mode=dark
+            dist/equalizer.svg?theme=equalizer
+            dist/equalizer-dark.svg?theme=equalizer&mode=dark
+            dist/splitflap.svg?theme=splitflap
+            dist/splitflap-dark.svg?theme=splitflap&mode=dark
+            dist/neon.svg?theme=neon
+            dist/neon-dark.svg?theme=neon&mode=dark
+            dist/replay.svg?theme=replay
+            dist/replay-dark.svg?theme=replay&mode=dark
+            dist/constellation.svg?theme=constellation
+            dist/constellation-dark.svg?theme=constellation&mode=dark
+            dist/circuit.svg?theme=circuit
+            dist/circuit-dark.svg?theme=circuit&mode=dark
+            dist/warp.svg?theme=warp
+            dist/warp-dark.svg?theme=warp&mode=dark
+            dist/railgun.svg?theme=railgun
+            dist/railgun-dark.svg?theme=railgun&mode=dark
       - uses: crazy-max/ghaction-github-pages@v5
         with:
           target_branch: output

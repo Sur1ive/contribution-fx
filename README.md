@@ -5,7 +5,7 @@
 **Your contribution graph, but alive.**
 
 Turn your GitHub contribution graph into animated SVG art for your profile README.<br>
-Five effects · five palettes · light & dark · one GitHub Action · zero dependencies.
+Thirteen effects · five palettes · light & dark · one GitHub Action · zero dependencies.
 
 <a href="https://sur1ive.github.io/contribution-fx/"><b>▶ Try it with your username</b></a> ·
 <a href="#quick-start">Quick start</a> ·
@@ -45,6 +45,70 @@ Every day travels to its sorted position until the year becomes a perfect gradie
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="examples/sort-dark.svg">
   <img alt="sort" src="examples/sort-light.svg">
+</picture>
+
+### `equalizer`
+Every week becomes an equalizer bar bouncing to the beat, your busiest weeks peaking highest.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/equalizer-dark.svg">
+  <img alt="equalizer" src="examples/equalizer-light.svg">
+</picture>
+
+### `splitflap`
+Your graph becomes an airport departure board, every day clattering through its flaps.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/splitflap-dark.svg">
+  <img alt="splitflap" src="examples/splitflap-light.svg">
+</picture>
+
+### `neon`
+Your graph becomes a neon sign that stutters to life block by block, hums, buzzes and cuts out.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/neon-dark.svg">
+  <img alt="neon" src="examples/neon-light.svg">
+</picture>
+
+### `replay`
+Your year replays as a time-lapse: every day pops in behind a playhead while the counter ticks up to your total.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/replay-dark.svg">
+  <img alt="replay" src="examples/replay-light.svg">
+</picture>
+
+### `constellation`
+Your year as a night sky: busy days twinkle as stars and draw themselves into constellations.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/constellation-dark.svg">
+  <img alt="constellation" src="examples/constellation-light.svg">
+</picture>
+
+### `circuit`
+Your graph becomes a circuit board: copper traces etch between the days and signals light them up like LEDs.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/circuit-dark.svg">
+  <img alt="circuit" src="examples/circuit-light.svg">
+</picture>
+
+### `warp`
+Your graph charges up and jumps to hyperspace, every day a streak of light, then drops back into place.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/warp-dark.svg">
+  <img alt="warp" src="examples/warp-light.svg">
+</picture>
+
+### `railgun`
+A railgun charges up and fires across your graph, its shockwave blasting the days aside.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/railgun-dark.svg">
+  <img alt="railgun" src="examples/railgun-light.svg">
 </picture>
 
 ### `fireworks`  <sub>shown with `palette=sunset`</sub>
@@ -136,7 +200,7 @@ outputs: |
 
 | Option       | Values                                              | Default       |
 | ------------ | --------------------------------------------------- | ------------- |
-| `theme`      | `ripple` `sort` `fireworks` `life` `gravity`        | `gravity`     |
+| `theme`      | `ripple` `sort` `equalizer` `splitflap` `neon` `replay` `constellation` `circuit` `warp` `railgun` `fireworks` `life` `gravity` | `gravity` |
 | `palette`    | `github` `ocean` `sunset` `purple` `halloween`      | `github`      |
 | `mode`       | `light` `dark`                                      | `light`       |
 | `speed`      | any positive number (`2` = twice as fast)           | `1`           |

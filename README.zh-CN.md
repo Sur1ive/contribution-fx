@@ -5,7 +5,7 @@
 **让你的 GitHub 贡献图活起来。**
 
 把 GitHub 贡献图变成可以放进个人主页 README 的动画 SVG。<br>
-5 种特效 · 5 套配色 · 亮色/暗色 · 一个 GitHub Action · 零依赖。
+13 种特效 · 5 套配色 · 亮色/暗色 · 一个 GitHub Action · 零依赖。
 
 <a href="https://sur1ive.github.io/contribution-fx/"><b>▶ 输入用户名在线预览</b></a> ·
 <a href="#快速开始">快速开始</a> ·
@@ -30,6 +30,14 @@
 | --- | --- |
 | `ripple` | 最忙碌的几天像雨滴落入水面，冲击波扫过整张图（示例使用 `palette=ocean`） |
 | `sort` | 每一天移动到排序后的位置，整年变成完美渐变，再飞回原处 |
+| `equalizer` | 每一周化作一根随节拍跳动的均衡器柱，贡献越多的那周跳得越高 |
+| `splitflap` | 贡献图变成机场的翻牌式航班显示屏，每一天都哗啦啦地翻个不停 |
+| `neon` | 贡献图化身霓虹灯招牌，一格格闪烁着亮起，嗡嗡作响、忽明忽暗，最后啪地熄灭 |
+| `replay` | 把这一年做成延时回放：播放头扫过，每一天依次亮起，计数器一路涨到你的全年总数 |
+| `constellation` | 把这一年化作夜空：忙碌的日子是闪烁的星星，并自动连成星座 |
+| `circuit` | 贡献图变成一块电路板：铜线在格子之间蚀刻成形，信号流过，把它们像 LED 一样点亮 |
+| `warp` | 贡献图蓄能后跃入超空间，每一天都拉成一道光，随后再落回原位 |
+| `railgun` | 一门电磁炮蓄能后横贯贡献图开火，冲击波把沿途的格子掀向两边 |
 | `fireworks` | 你最高产的日子会升起烟花（示例使用 `palette=sunset`） |
 | `life` | 以你的贡献图为初始状态运行康威生命游戏，一代代演化 |
 | `gravity` | 每个有贡献的格子掉落到当周底部、弹跳、停留，再飘回原位 |
@@ -37,6 +45,46 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="examples/sort-dark.svg">
   <img alt="sort" src="examples/sort-light.svg">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/equalizer-dark.svg">
+  <img alt="equalizer" src="examples/equalizer-light.svg">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/splitflap-dark.svg">
+  <img alt="splitflap" src="examples/splitflap-light.svg">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/neon-dark.svg">
+  <img alt="neon" src="examples/neon-light.svg">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/replay-dark.svg">
+  <img alt="replay" src="examples/replay-light.svg">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/constellation-dark.svg">
+  <img alt="constellation" src="examples/constellation-light.svg">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/circuit-dark.svg">
+  <img alt="circuit" src="examples/circuit-light.svg">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/warp-dark.svg">
+  <img alt="warp" src="examples/warp-light.svg">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/railgun-dark.svg">
+  <img alt="railgun" src="examples/railgun-light.svg">
 </picture>
 
 <picture>
@@ -119,7 +167,7 @@ outputs: |
 
 | 参数         | 取值                                           | 默认值      |
 | ------------ | ---------------------------------------------- | ----------- |
-| `theme`      | `ripple` `sort` `fireworks` `life` `gravity`   | `gravity`   |
+| `theme`      | `ripple` `sort` `equalizer` `splitflap` `neon` `replay` `constellation` `circuit` `warp` `railgun` `fireworks` `life` `gravity` | `gravity` |
 | `palette`    | `github` `ocean` `sunset` `purple` `halloween` | `github`    |
 | `mode`       | `light` `dark`                                 | `light`     |
 | `speed`      | 任意正数（`2` 表示两倍速）                     | `1`         |
