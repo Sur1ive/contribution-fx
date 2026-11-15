@@ -15,10 +15,8 @@ Fourteen effects · five palettes · light & dark · one GitHub Action · zero d
 
 <br><br>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/ripple-dark.svg">
-  <img alt="contribution-fx ripple theme" src="examples/ripple-light.svg">
-</picture>
+<img alt="contribution-fx circuit theme · light" src="examples/circuit-light.svg">
+<img alt="contribution-fx circuit theme · dark" src="examples/circuit-dark.svg">
 
 [![CI](https://github.com/Sur1ive/contribution-fx/actions/workflows/ci.yml/badge.svg)](https://github.com/Sur1ive/contribution-fx/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -29,119 +27,91 @@ Fourteen effects · five palettes · light & dark · one GitHub Action · zero d
 
 ## Themes
 
-All examples below are real output of this action (rendered from demo data). Every theme loops forever, respects `prefers-reduced-motion`, and falls back to your normal graph when animations are off.
-
-### `ripple`  <sub>shown with `palette=ocean`</sub>
-Your busiest days hit the graph like raindrops on water and send shockwaves across the year.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/ripple-dark.svg">
-  <img alt="ripple" src="examples/ripple-light.svg">
-</picture>
-
-### `sort`
-Every day travels to its sorted position until the year becomes a perfect gradient — then everything flies home.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/sort-dark.svg">
-  <img alt="sort" src="examples/sort-light.svg">
-</picture>
-
-### `equalizer`
-Every week becomes an equalizer bar bouncing to the beat, your busiest weeks peaking highest.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/equalizer-dark.svg">
-  <img alt="equalizer" src="examples/equalizer-light.svg">
-</picture>
-
-### `splitflap`
-Your graph becomes an airport departure board, every day clattering through its flaps.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/splitflap-dark.svg">
-  <img alt="splitflap" src="examples/splitflap-light.svg">
-</picture>
-
-### `neon`
-Your graph becomes a neon sign that stutters to life block by block, hums, buzzes and cuts out.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/neon-dark.svg">
-  <img alt="neon" src="examples/neon-light.svg">
-</picture>
-
-### `replay`
-Your year replays as a time-lapse: every day pops in behind a playhead while the counter ticks up to your total.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/replay-dark.svg">
-  <img alt="replay" src="examples/replay-light.svg">
-</picture>
-
-### `constellation`
-Your year as a night sky: busy days twinkle as stars and draw themselves into constellations.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/constellation-dark.svg">
-  <img alt="constellation" src="examples/constellation-light.svg">
-</picture>
+All examples below are real output of this action (rendered from demo data), shown in light and in dark. Every theme loops forever, respects `prefers-reduced-motion`, and falls back to your normal graph when animations are off.
 
 ### `circuit`
 Your graph becomes a circuit board: copper traces etch between the days and signals light them up like LEDs.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/circuit-dark.svg">
-  <img alt="circuit" src="examples/circuit-light.svg">
-</picture>
-
-### `warp`
-Your graph charges up and jumps to hyperspace, every day a streak of light, then drops back into place.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/warp-dark.svg">
-  <img alt="warp" src="examples/warp-light.svg">
-</picture>
+<img alt="circuit · light" src="examples/circuit-light.svg">
+<img alt="circuit · dark" src="examples/circuit-dark.svg">
 
 ### `railgun`
 A railgun charges up and fires across your graph, its shockwave blasting the days aside.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/railgun-dark.svg">
-  <img alt="railgun" src="examples/railgun-light.svg">
-</picture>
+<img alt="railgun · light" src="examples/railgun-light.svg">
+<img alt="railgun · dark" src="examples/railgun-dark.svg">
+
+### `neon`
+Your graph becomes a neon sign that stutters to life block by block, hums, buzzes and cuts out.
+
+<img alt="neon · light" src="examples/neon-light.svg">
+<img alt="neon · dark" src="examples/neon-dark.svg">
+
+### `ripple`  <sub>shown with `palette=ocean`</sub>
+Your busiest days hit the graph like raindrops on water and send shockwaves across the year.
+
+<img alt="ripple · light" src="examples/ripple-light.svg">
+<img alt="ripple · dark" src="examples/ripple-dark.svg">
+
+### `sort`
+Every day travels to its sorted position until the year becomes a perfect gradient — then everything flies home.
+
+<img alt="sort · light" src="examples/sort-light.svg">
+<img alt="sort · dark" src="examples/sort-dark.svg">
+
+### `equalizer`
+Every week becomes an equalizer bar bouncing to the beat, your busiest weeks peaking highest.
+
+<img alt="equalizer · light" src="examples/equalizer-light.svg">
+<img alt="equalizer · dark" src="examples/equalizer-dark.svg">
+
+### `splitflap`
+Your graph becomes an airport departure board, every day clattering through its flaps.
+
+<img alt="splitflap · light" src="examples/splitflap-light.svg">
+<img alt="splitflap · dark" src="examples/splitflap-dark.svg">
+
+### `replay`
+Your year replays as a time-lapse: every day pops in behind a playhead while the counter ticks up to your total.
+
+<img alt="replay · light" src="examples/replay-light.svg">
+<img alt="replay · dark" src="examples/replay-dark.svg">
+
+### `constellation`
+Your year as a night sky: busy days twinkle as stars and draw themselves into constellations.
+
+<img alt="constellation · light" src="examples/constellation-light.svg">
+<img alt="constellation · dark" src="examples/constellation-dark.svg">
+
+### `warp`
+Your graph charges up and jumps to hyperspace, every day a streak of light, then drops back into place.
+
+<img alt="warp · light" src="examples/warp-light.svg">
+<img alt="warp · dark" src="examples/warp-dark.svg">
 
 ### `fireworks`  <sub>shown with `palette=sunset`</sub>
 Your best days launch fireworks. Because shipping deserves a celebration.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/fireworks-dark.svg">
-  <img alt="fireworks" src="examples/fireworks-light.svg">
-</picture>
+<img alt="fireworks · light" src="examples/fireworks-light.svg">
+<img alt="fireworks · dark" src="examples/fireworks-dark.svg">
 
 ### `life`
 Your graph seeds [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). Watch a year of commits evolve, generation by generation.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/life-dark.svg">
-  <img alt="life" src="examples/life-light.svg">
-</picture>
+<img alt="life · light" src="examples/life-light.svg">
+<img alt="life · dark" src="examples/life-dark.svg">
 
 ### `gravity`
 Every active day drops to the bottom of its week, bounces, rests, then floats back into place.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/gravity-dark.svg">
-  <img alt="gravity" src="examples/gravity-light.svg">
-</picture>
+<img alt="gravity · light" src="examples/gravity-light.svg">
+<img alt="gravity · dark" src="examples/gravity-dark.svg">
 
 ### `naiwa`  <sub>easter egg</sub>
 Naiwa (奶蛙), a Chinese internet meme, hops across your graph, faceplants, then laughs so hard that every busy day starts laughing too.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="examples/naiwa-dark.svg">
-  <img alt="naiwa" src="examples/naiwa-light.svg">
-</picture>
+<img alt="naiwa · light" src="examples/naiwa-light.svg">
+<img alt="naiwa · dark" src="examples/naiwa-dark.svg">
 
 ## Quick start
 
@@ -168,8 +138,8 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/contribution-fx.svg?theme=ripple
-            dist/contribution-fx-dark.svg?theme=ripple&mode=dark
+            dist/contribution-fx.svg?theme=circuit
+            dist/contribution-fx-dark.svg?theme=circuit&mode=dark
 
       - uses: crazy-max/ghaction-github-pages@v5
         with:
@@ -208,7 +178,7 @@ outputs: |
 
 | Option       | Values                                              | Default       |
 | ------------ | --------------------------------------------------- | ------------- |
-| `theme`      | `ripple` `sort` `equalizer` `splitflap` `neon` `replay` `constellation` `circuit` `warp` `railgun` `fireworks` `life` `gravity` `naiwa` | `gravity` |
+| `theme`      | `circuit` `railgun` `neon` `ripple` `sort` `equalizer` `splitflap` `replay` `constellation` `warp` `fireworks` `life` `gravity` `naiwa` | `gravity` |
 | `palette`    | `github` `ocean` `sunset` `purple` `halloween`      | `github`      |
 | `mode`       | `light` `dark`                                      | `light`       |
 | `speed`      | any positive number (`2` = twice as fast)           | `1`           |

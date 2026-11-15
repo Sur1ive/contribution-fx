@@ -10,6 +10,7 @@ const only = process.argv[2];
 const cal = demoCalendar('octocat');
 // Showcase a few palettes in the README gallery.
 const PALETTE = { ripple: 'ocean', fireworks: 'sunset' };
+const BACKGROUND = { light: '#ffffff', dark: '#0d1117' };
 await mkdir('examples', { recursive: true });
 
 const rows = [];
@@ -17,7 +18,7 @@ for (const name of Object.keys(THEMES)) {
   if (only && name !== only) continue;
   for (const mode of ['light', 'dark']) {
     const file = `${name}-${mode}.svg`;
-    const svg = render(cal, { theme: name, mode, palette: PALETTE[name] ?? 'github' });
+    const svg = render(cal, { theme: name, mode, palette: PALETTE[name] ?? 'github', background: BACKGROUND[mode] });
     await writeFile(`examples/${file}`, svg);
     console.log(`examples/${file}  ${(svg.length / 1024).toFixed(1)} KB`);
     rows.push(`<div class="${mode}"><h3>${name} · ${mode}</h3><img src="${file}"></div>`);
