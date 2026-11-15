@@ -47,6 +47,8 @@ jobs:
             dist/warp-dark.svg?theme=warp&mode=dark
             dist/railgun.svg?theme=railgun
             dist/railgun-dark.svg?theme=railgun&mode=dark
+            dist/naiwa.svg?theme=naiwa
+            dist/naiwa-dark.svg?theme=naiwa&mode=dark
       - uses: crazy-max/ghaction-github-pages@v5
         with:
           target_branch: output

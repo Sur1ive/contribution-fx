@@ -5,7 +5,7 @@
 **Your contribution graph, but alive.**
 
 Turn your GitHub contribution graph into animated SVG art for your profile README.<br>
-Thirteen effects · five palettes · light & dark · one GitHub Action · zero dependencies.
+Fourteen effects · five palettes · light & dark · one GitHub Action · zero dependencies.
 
 <a href="https://sur1ive.github.io/contribution-fx/"><b>▶ Try it with your username</b></a> ·
 <a href="#quick-start">Quick start</a> ·
@@ -135,6 +135,14 @@ Every active day drops to the bottom of its week, bounces, rests, then floats ba
   <img alt="gravity" src="examples/gravity-light.svg">
 </picture>
 
+### `naiwa`  <sub>easter egg</sub>
+Naiwa (奶蛙), a Chinese internet meme, hops across your graph, faceplants, then laughs so hard that every busy day starts laughing too.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/naiwa-dark.svg">
+  <img alt="naiwa" src="examples/naiwa-light.svg">
+</picture>
+
 ## Quick start
 
 It takes about two minutes. You need a [profile repository](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme) (a public repo named exactly like your username).
@@ -200,7 +208,7 @@ outputs: |
 
 | Option       | Values                                              | Default       |
 | ------------ | --------------------------------------------------- | ------------- |
-| `theme`      | `ripple` `sort` `equalizer` `splitflap` `neon` `replay` `constellation` `circuit` `warp` `railgun` `fireworks` `life` `gravity` | `gravity` |
+| `theme`      | `ripple` `sort` `equalizer` `splitflap` `neon` `replay` `constellation` `circuit` `warp` `railgun` `fireworks` `life` `gravity` `naiwa` | `gravity` |
 | `palette`    | `github` `ocean` `sunset` `purple` `halloween`      | `github`      |
 | `mode`       | `light` `dark`                                      | `light`       |
 | `speed`      | any positive number (`2` = twice as fast)           | `1`           |

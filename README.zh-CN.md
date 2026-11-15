@@ -5,7 +5,7 @@
 **让你的 GitHub 贡献图活起来。**
 
 把 GitHub 贡献图变成可以放进个人主页 README 的动画 SVG。<br>
-13 种特效 · 5 套配色 · 亮色/暗色 · 一个 GitHub Action · 零依赖。
+14 种特效（含奶蛙彩蛋）· 5 套配色 · 亮色/暗色 · 一个 GitHub Action · 零依赖。
 
 <a href="https://sur1ive.github.io/contribution-fx/"><b>▶ 输入用户名在线预览</b></a> ·
 <a href="#快速开始">快速开始</a> ·
@@ -21,6 +21,15 @@
 </picture>
 
 </div>
+
+## 彩蛋：奶蛙
+
+奶蛙蹦蹦跳跳地闯进你的贡献图，摔了个狗啃泥，爬起来捂着肚子狂笑，笑到你每个有提交的格子都跟着一起笑。把输出里的主题改成 `theme=naiwa` 就能用：
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="examples/naiwa-dark.svg">
+  <img alt="naiwa" src="examples/naiwa-light.svg">
+</picture>
 
 ## 主题
 
@@ -41,6 +50,7 @@
 | `fireworks` | 你最高产的日子会升起烟花（示例使用 `palette=sunset`） |
 | `life` | 以你的贡献图为初始状态运行康威生命游戏，一代代演化 |
 | `gravity` | 每个有贡献的格子掉落到当周底部、弹跳、停留，再飘回原位 |
+| `naiwa` | 彩蛋：奶蛙蹦进来、摔一跤、捂肚狂笑，全图的格子跟着一起笑（见上方） |
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="examples/sort-dark.svg">
@@ -167,7 +177,7 @@ outputs: |
 
 | 参数         | 取值                                           | 默认值      |
 | ------------ | ---------------------------------------------- | ----------- |
-| `theme`      | `ripple` `sort` `equalizer` `splitflap` `neon` `replay` `constellation` `circuit` `warp` `railgun` `fireworks` `life` `gravity` | `gravity` |
+| `theme`      | `ripple` `sort` `equalizer` `splitflap` `neon` `replay` `constellation` `circuit` `warp` `railgun` `fireworks` `life` `gravity` `naiwa` | `gravity` |
 | `palette`    | `github` `ocean` `sunset` `purple` `halloween` | `github`    |
 | `mode`       | `light` `dark`                                 | `light`     |
 | `speed`      | 任意正数（`2` 表示两倍速）                     | `1`         |

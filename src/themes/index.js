@@ -11,8 +11,9 @@ import neon from './neon.js';
 import replay from './replay.js';
 import constellation from './constellation.js';
 import circuit from './circuit.js';
+import naiwa from './naiwa.js';
 
 // Display order for the playground and docs.
 export const THEMES = {
-  ripple, sort, equalizer, splitflap, neon, replay, constellation, circuit, warp, railgun, fireworks, life, gravity,
+  ripple, sort, equalizer, splitflap, neon, replay, constellation, circuit, warp, railgun, fireworks, life, gravity, naiwa,
 };
