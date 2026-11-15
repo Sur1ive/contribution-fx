@@ -15,8 +15,7 @@ Fourteen effects · five palettes · light & dark · one GitHub Action · zero d
 
 <br><br>
 
-<img alt="contribution-fx circuit theme · light" src="examples/circuit-light.svg">
-<img alt="contribution-fx circuit theme · dark" src="examples/circuit-dark.svg">
+<img alt="contribution-fx circuit theme" src="examples/circuit-light.svg">
 
 [![CI](https://github.com/Sur1ive/contribution-fx/actions/workflows/ci.yml/badge.svg)](https://github.com/Sur1ive/contribution-fx/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -44,8 +43,7 @@ A railgun charges up and fires across your graph, its shockwave blasting the day
 ### `neon`
 Your graph becomes a neon sign that stutters to life block by block, hums, buzzes and cuts out.
 
-<img alt="neon · light" src="examples/neon-light.svg">
-<img alt="neon · dark" src="examples/neon-dark.svg">
+<img alt="neon" src="examples/neon-light.svg">
 
 ### `ripple`  <sub>shown with `palette=ocean`</sub>
 Your busiest days hit the graph like raindrops on water and send shockwaves across the year.

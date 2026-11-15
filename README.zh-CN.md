@@ -15,8 +15,7 @@
 
 <br><br>
 
-<img alt="contribution-fx circuit 主题 · light" src="examples/circuit-light.svg">
-<img alt="contribution-fx circuit 主题 · dark" src="examples/circuit-dark.svg">
+<img alt="contribution-fx circuit 主题" src="examples/circuit-light.svg">
 
 </div>
 
@@ -47,8 +46,7 @@
 <img alt="railgun · light" src="examples/railgun-light.svg">
 <img alt="railgun · dark" src="examples/railgun-dark.svg">
 
-<img alt="neon · light" src="examples/neon-light.svg">
-<img alt="neon · dark" src="examples/neon-dark.svg">
+<img alt="neon" src="examples/neon-light.svg">
 
 <img alt="ripple · light" src="examples/ripple-light.svg">
 <img alt="ripple · dark" src="examples/ripple-dark.svg">
