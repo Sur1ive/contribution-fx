@@ -21,65 +21,43 @@
 
 ## 主题
 
-下面的示例都是本 Action 的真实输出（使用演示数据渲染），浅色和深色各一张。所有主题无限循环播放，遵循系统的“减少动态效果”设置，动画关闭时会显示正常的静态贡献图。
+下面的示例都是本 Action 的真实输出（使用演示数据渲染），均为浅色。所有主题无限循环播放，遵循系统的“减少动态效果”设置，动画关闭时会显示正常的静态贡献图。
 
 | 主题 | 效果 |
 | --- | --- |
 | `circuit` | 贡献图变成一块电路板：铜线在格子之间蚀刻成形，信号流过，把它们像 LED 一样点亮 |
-| `railgun` | 一门电磁炮蓄能后横贯贡献图开火，冲击波把沿途的格子掀向两边 |
 | `neon` | 贡献图化身霓虹灯招牌，一格格闪烁着亮起，嗡嗡作响、忽明忽暗，最后啪地熄灭 |
-| `ripple` | 最忙碌的几天像雨滴落入水面，冲击波扫过整张图（示例使用 `palette=ocean`） |
-| `sort` | 每一天移动到排序后的位置，整年变成完美渐变，再飞回原处 |
-| `equalizer` | 每一周化作一根随节拍跳动的均衡器柱，贡献越多的那周跳得越高 |
-| `splitflap` | 贡献图变成机场的翻牌式航班显示屏，每一天都哗啦啦地翻个不停 |
+| `life` | 以你的贡献图为初始状态运行康威生命游戏，一代代演化 |
 | `replay` | 把这一年做成延时回放：播放头扫过，每一天依次亮起，计数器一路涨到你的全年总数 |
 | `constellation` | 把这一年化作夜空：忙碌的日子是闪烁的星星，并自动连成星座 |
-| `warp` | 贡献图蓄能后跃入超空间，每一天都拉成一道光，随后再落回原位 |
+| `railgun` | 一门电磁炮蓄能后横贯贡献图开火，冲击波把沿途的格子掀向两边 |
+| `ripple` | 最忙碌的几天像雨滴落入水面，冲击波扫过整张图（示例使用 `palette=ocean`） |
+| `sort` | 每一天移动到排序后的位置，整年变成完美渐变，再飞回原处 |
+| `splitflap` | 贡献图变成机场的翻牌式航班显示屏，每一天都哗啦啦地翻个不停 |
 | `fireworks` | 你最高产的日子会升起烟花（示例使用 `palette=sunset`） |
-| `life` | 以你的贡献图为初始状态运行康威生命游戏，一代代演化 |
-| `gravity` | 每个有贡献的格子掉落到当周底部、弹跳、停留，再飘回原位 |
 | `naiwa` | 彩蛋：奶蛙蹦进来、摔一跤、捂肚狂笑，全图的格子跟着一起笑 |
 
-<img alt="circuit · light" src="examples/circuit-light.svg">
-<img alt="circuit · dark" src="examples/circuit-dark.svg">
-
-<img alt="railgun · light" src="examples/railgun-light.svg">
-<img alt="railgun · dark" src="examples/railgun-dark.svg">
+<img alt="circuit" src="examples/circuit-light.svg">
 
 <img alt="neon" src="examples/neon-light.svg">
 
-<img alt="ripple · light" src="examples/ripple-light.svg">
-<img alt="ripple · dark" src="examples/ripple-dark.svg">
+<img alt="life" src="examples/life-light.svg">
 
-<img alt="sort · light" src="examples/sort-light.svg">
-<img alt="sort · dark" src="examples/sort-dark.svg">
+<img alt="replay" src="examples/replay-light.svg">
 
-<img alt="equalizer · light" src="examples/equalizer-light.svg">
-<img alt="equalizer · dark" src="examples/equalizer-dark.svg">
+<img alt="constellation" src="examples/constellation-light.svg">
 
-<img alt="splitflap · light" src="examples/splitflap-light.svg">
-<img alt="splitflap · dark" src="examples/splitflap-dark.svg">
+<img alt="railgun" src="examples/railgun-light.svg">
 
-<img alt="replay · light" src="examples/replay-light.svg">
-<img alt="replay · dark" src="examples/replay-dark.svg">
+<img alt="ripple" src="examples/ripple-light.svg">
 
-<img alt="constellation · light" src="examples/constellation-light.svg">
-<img alt="constellation · dark" src="examples/constellation-dark.svg">
+<img alt="sort" src="examples/sort-light.svg">
 
-<img alt="warp · light" src="examples/warp-light.svg">
-<img alt="warp · dark" src="examples/warp-dark.svg">
+<img alt="splitflap" src="examples/splitflap-light.svg">
 
-<img alt="fireworks · light" src="examples/fireworks-light.svg">
-<img alt="fireworks · dark" src="examples/fireworks-dark.svg">
+<img alt="fireworks" src="examples/fireworks-light.svg">
 
-<img alt="life · light" src="examples/life-light.svg">
-<img alt="life · dark" src="examples/life-dark.svg">
-
-<img alt="gravity · light" src="examples/gravity-light.svg">
-<img alt="gravity · dark" src="examples/gravity-dark.svg">
-
-<img alt="naiwa · light" src="examples/naiwa-light.svg">
-<img alt="naiwa · dark" src="examples/naiwa-dark.svg">
+<img alt="naiwa" src="examples/naiwa-light.svg">
 
 ## 快速开始
 
@@ -146,7 +124,7 @@ outputs: |
 
 | 参数         | 取值                                           | 默认值      |
 | ------------ | ---------------------------------------------- | ----------- |
-| `theme`      | `circuit` `railgun` `neon` `ripple` `sort` `equalizer` `splitflap` `replay` `constellation` `warp` `fireworks` `life` `gravity` `naiwa` | `gravity` |
+| `theme`      | `circuit` `neon` `life` `replay` `constellation` `railgun` `ripple` `sort` `splitflap` `fireworks` `naiwa` `equalizer` `warp` `gravity` | `gravity` |
 | `palette`    | `github` `ocean` `sunset` `purple` `halloween` | `github`    |
 | `mode`       | `light` `dark`                                 | `light`     |
 | `speed`      | 任意正数（`2` 表示两倍速）                     | `1`         |

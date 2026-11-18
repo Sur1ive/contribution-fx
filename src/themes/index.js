@@ -15,5 +15,5 @@ import naiwa from './naiwa.js';
 
 // Display order for the playground and docs.
 export const THEMES = {
-  circuit, railgun, neon, ripple, sort, equalizer, splitflap, replay, constellation, warp, fireworks, life, gravity, naiwa,
+  circuit, neon, life, replay, constellation, railgun, ripple, sort, splitflap, fireworks, naiwa, equalizer, warp, gravity,
 };
