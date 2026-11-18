@@ -48,6 +48,11 @@ test('life: base attributes show the real graph', () => {
   assert.match(svg, /infinite/);
 });
 
+test('life: a small caption names the game', () => {
+  const svg = render(demoCalendar('octocat'), { theme: 'life' });
+  assert.match(svg, /<text [^>]*font-size="8"[^>]*>Conway's Game of Life<\/text>/);
+});
+
 test('life: partial weeks draw only existing days', () => {
   const list = Array.from({ length: 40 }, (_, i) => ({
     date: new Date(Date.UTC(2026, 0, 1) + i * 86400000).toISOString().slice(0, 10),

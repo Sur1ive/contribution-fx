@@ -12,6 +12,8 @@ const HOLD = 0.6; // pause on the final generation, must exceed TRAIL * STEP
 const FADE = 1.2; // sweep back to the real graph
 const BANDS = 8;
 const BAND_FADE = 0.5;
+const CAPTION = 12;
+const FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif";
 
 /** One Life generation on a cols x rows torus. Cells are indexed x * rows + y. */
 export function step(alive, cols, rows, exists) {
@@ -64,9 +66,13 @@ const ageForLevel = [0, 2, 2, 1, 0];
 export default {
   name: 'life',
   description: "Your contributions seed Conway's Game of Life, evolve, then reassemble.",
+  extraBottom: CAPTION,
 
   render(ctx) {
-    const { cal, colors } = ctx;
+    const { cal, colors, origin, grid } = ctx;
+    const caption =
+      `<text x="${n(origin.x + grid.width)}" y="${n(origin.y + grid.height + CAPTION - 1)}" text-anchor="end" ` +
+      `font-family="${FONT}" font-size="8" fill="${colors.text}" fill-opacity=".55">Conway's Game of Life</text>`;
     const rows = 7;
     const cols = Math.max(1, cal.cols);
     const exists = new Uint8Array(cols * rows);
@@ -86,7 +92,7 @@ export default {
         const p = ctx.pos(d.x, d.y);
         return rect(p.x, p.y, `class="l${d.level}"`);
       }).join('');
-      return { style: '', body };
+      return { style: '', body: body + caption };
     }
 
     // Per-cell level for every generation.
@@ -167,6 +173,6 @@ export default {
     }
 
     style = `.lf rect{animation-duration:${n(ctx.duration(cycle))}s;animation-timing-function:step-end;animation-iteration-count:infinite}${style}`;
-    return { style, body: `<g class="lf">${cells.join('')}</g>` };
+    return { style, body: `<g class="lf">${cells.join('')}</g>${caption}` };
   },
 };
