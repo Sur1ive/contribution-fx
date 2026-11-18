@@ -1,6 +1,8 @@
 import { render, THEMES, PALETTES, demoCalendar, fetchPublic } from './src/index.js';
 
-const THEME_NAMES = Object.keys(THEMES);
+// Still available to the Action, just not showcased here.
+const UNLISTED = new Set(['equalizer', 'warp', 'gravity']);
+const THEME_NAMES = Object.keys(THEMES).filter((name) => !UNLISTED.has(name));
 const DEFAULTS = { theme: THEME_NAMES[0], palette: 'github', mode: 'light', speed: 1, label: false };
 const PALETTE_NAMES = Object.keys(PALETTES);
 const USERNAME = /^[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$/i;
