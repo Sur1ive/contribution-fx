@@ -5,7 +5,7 @@
 **Your contribution graph, but alive.**
 
 Turn your GitHub contribution graph into animated SVG art for your profile README.<br>
-Fourteen effects · five palettes · light & dark · one GitHub Action · zero dependencies.
+Many effects · five palettes · light & dark · one GitHub Action · zero dependencies.
 
 <a href="https://sur1ive.github.io/contribution-fx/"><b>▶ Try it with your username</b></a> ·
 <a href="#quick-start">Quick start</a> ·

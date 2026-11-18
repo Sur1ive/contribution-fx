@@ -5,7 +5,7 @@
 **让你的 GitHub 贡献图活起来。**
 
 把 GitHub 贡献图变成可以放进个人主页 README 的动画 SVG。<br>
-14 种特效（含奶蛙彩蛋）· 5 套配色 · 亮色/暗色 · 一个 GitHub Action · 零依赖。
+多种特效（含奶蛙彩蛋）· 5 套配色 · 亮色/暗色 · 一个 GitHub Action · 零依赖。
 
 <a href="https://sur1ive.github.io/contribution-fx/"><b>▶ 输入用户名在线预览</b></a> ·
 <a href="#快速开始">快速开始</a> ·
