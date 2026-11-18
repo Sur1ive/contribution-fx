@@ -100,10 +100,12 @@ jobs:
 **3. 把下面的代码粘贴到 `README.md`**（替换 `USERNAME`）：
 
 ```html
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/USERNAME/USERNAME/output/contribution-fx-dark.svg" />
-  <img alt="contribution-fx" src="https://raw.githubusercontent.com/USERNAME/USERNAME/output/contribution-fx.svg" />
-</picture>
+<a href="https://github.com/Sur1ive/contribution-fx">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/USERNAME/USERNAME/output/contribution-fx-dark.svg" />
+    <img alt="contribution-fx" src="https://raw.githubusercontent.com/USERNAME/USERNAME/output/contribution-fx.svg" />
+  </picture>
+</a>
 ```
 
 完成！之后工作流每天会自动更新。

@@ -420,10 +420,12 @@ jobs:
 
 function readmeText(user) {
   const base = `https://raw.githubusercontent.com/${user}/${user}/output`;
-  return `<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="${base}/contribution-fx-dark.svg" />
-  <img alt="contribution-fx" src="${base}/contribution-fx.svg" />
-</picture>
+  return `<a href="https://github.com/Sur1ive/contribution-fx">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="${base}/contribution-fx-dark.svg" />
+    <img alt="contribution-fx" src="${base}/contribution-fx.svg" />
+  </picture>
+</a>
 `;
 }
 
