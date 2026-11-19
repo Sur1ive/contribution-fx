@@ -12,8 +12,10 @@ import replay from './replay.js';
 import constellation from './constellation.js';
 import circuit from './circuit.js';
 import naiwa from './naiwa.js';
+import { fxBend, fxStack } from './fx.js';
 
 // Display order for the playground and docs.
 export const THEMES = {
+  fx1: fxBend, fx2: fxStack,
   circuit, neon, life, replay, constellation, railgun, ripple, sort, splitflap, fireworks, naiwa, equalizer, warp, gravity,
 };
