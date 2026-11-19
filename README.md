@@ -15,7 +15,7 @@ Many effects · five palettes · light & dark · one GitHub Action · zero depen
 
 <br><br>
 
-<img alt="contribution-fx fx1 theme" src="examples/fx1-dark.svg">
+<img alt="contribution-fx fx2 theme" src="examples/fx2-light.svg">
 
 [![CI](https://github.com/Sur1ive/contribution-fx/actions/workflows/ci.yml/badge.svg)](https://github.com/Sur1ive/contribution-fx/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -26,17 +26,17 @@ Many effects · five palettes · light & dark · one GitHub Action · zero depen
 
 ## Themes
 
-All examples below are real output of this action (rendered from demo data), shown in light. Every theme loops forever, respects `prefers-reduced-motion`, and falls back to your normal graph when animations are off.
+All examples below are real output of this action (rendered from demo data), shown in light unless noted. Every theme loops forever, respects `prefers-reduced-motion`, and falls back to your normal graph when animations are off.
 
 ### `fx1`
 Your graph bends into a candlestick chart, one candle per week, and trades under your username. Then the market crashes off the screen and every day flies back home.
 
 <img alt="fx1" src="examples/fx1-light.svg">
 
-### `fx2`
+### `fx2`  <sub>shown with `mode=dark`</sub>
 Each week's busy days stack into a candle, so active weeks rally and quiet ones slide. Then the chart tumbles off and every day flies back home.
 
-<img alt="fx2" src="examples/fx2-light.svg">
+<img alt="fx2" src="examples/fx2-dark.svg">
 
 ### `circuit`
 Your graph becomes a circuit board: copper traces etch between the days and signals light them up like LEDs.

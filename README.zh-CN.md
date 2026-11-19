@@ -15,18 +15,18 @@
 
 <br><br>
 
-<img alt="contribution-fx fx1 主题" src="examples/fx1-dark.svg">
+<img alt="contribution-fx fx2 主题" src="examples/fx2-light.svg">
 
 </div>
 
 ## 主题
 
-下面的示例都是本 Action 的真实输出（使用演示数据渲染），均为浅色。所有主题无限循环播放，遵循系统的“减少动态效果”设置，动画关闭时会显示正常的静态贡献图。
+下面的示例都是本 Action 的真实输出（使用演示数据渲染），除注明外均为浅色。所有主题无限循环播放，遵循系统的“减少动态效果”设置，动画关闭时会显示正常的静态贡献图。
 
 | 主题 | 效果 |
 | --- | --- |
 | `fx1` | 贡献图弯成一张 K 线图，每周一根蜡烛，以你的用户名挂牌报价；随后股价崩出屏幕，每一天再各自飞回原位 |
-| `fx2` | 每周活跃的日子堆成一根蜡烛，活跃的周上涨、冷清的周下跌；随后整张图跌出画面，每一天再各自飞回原位 |
+| `fx2` | 每周活跃的日子堆成一根蜡烛，活跃的周上涨、冷清的周下跌；随后整张图跌出画面，每一天再各自飞回原位（示例使用 `mode=dark`） |
 | `circuit` | 贡献图变成一块电路板：铜线在格子之间蚀刻成形，信号流过，把它们像 LED 一样点亮 |
 | `neon` | 贡献图化身霓虹灯招牌，一格格闪烁着亮起，嗡嗡作响、忽明忽暗，最后啪地熄灭 |
 | `life` | 以你的贡献图为初始状态运行康威生命游戏，一代代演化 |
@@ -41,7 +41,7 @@
 
 <img alt="fx1" src="examples/fx1-light.svg">
 
-<img alt="fx2" src="examples/fx2-light.svg">
+<img alt="fx2" src="examples/fx2-dark.svg">
 
 <img alt="circuit" src="examples/circuit-light.svg">
 
