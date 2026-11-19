@@ -1,7 +1,7 @@
 {
   "name": "contribution-fx",
   "version": "1.3.0",
-  "description": "Turn your GitHub contribution graph into animated SVG art for your profile README. Effects range from circuit boards and ripples to neon, fireworks and Game of Life — one GitHub Action, zero dependencies.",
+  "description": "Turn your GitHub contribution graph into animated SVG art for your profile README. Effects range from circuit boards and candlestick stock charts to neon, constellations and Game of Life — one GitHub Action, zero dependencies.",
   "type": "module",
   "main": "src/index.js",
   "bin": {
